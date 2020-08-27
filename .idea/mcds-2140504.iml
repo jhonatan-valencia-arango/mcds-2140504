@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/larapp/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/larapp/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/asm89/stack-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/brick/math" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/dnoegel/php-xdg-base-dir" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/dragonmantank/cron-expression" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/facade/flare-client-php" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/facade/ignition" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/facade/ignition-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/fideloper/proxy" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/filp/whoops" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/fruitcake/laravel-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/laravel/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/league/commonmark" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/league/mime-type-detection" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/mockery/mockery" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/nesbot/carbon" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/nunomaduro/collision" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/opis/closure" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/phar-io/manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/phpdocumentor/reflection-common" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/phpoption/phpoption" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/phpspec/prophecy" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/phpunit/php-token-stream" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/ramsey/collection" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/ramsey/uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/scrivo/highlight.php" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/sebastian/code-unit-reverse-lookup" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/sebastian/object-enumerator" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/sebastian/object-reflector" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/sebastian/resource-operations" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/sebastian/type" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/swiftmailer/swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/error-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/mime" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/polyfill-iconv" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/polyfill-intl-grapheme" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/polyfill-intl-idn" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/polyfill-intl-normalizer" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/polyfill-php70" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/polyfill-php72" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/polyfill-php73" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/string" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/translation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/tijsverkoyen/css-to-inline-styles" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/vlucas/phpdotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/voku/portable-ascii" />
+      <excludeFolder url="file://$MODULE_DIR$/larapp/vendor/webmozart/assert" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
