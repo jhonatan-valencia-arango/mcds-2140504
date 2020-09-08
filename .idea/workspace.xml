@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf6d10cf-e870-4376-a06b-ea0e9f95e25a" name="Default Changelist" comment="" />
+    <list default="true" id="cf6d10cf-e870-4376-a06b-ea0e9f95e25a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/larapp/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/larapp/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/larapp/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/larapp/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/larapp/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -127,7 +131,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/larapp" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -138,10 +144,23 @@
       <option name="presentableId" value="Default" />
       <updated>1598486518035</updated>
       <workItem from="1598486519447" duration="620000" />
+      <workItem from="1598489449604" duration="1857000" />
+      <workItem from="1598917760683" duration="2467000" />
+      <workItem from="1598922196740" duration="134000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="734" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598489479524">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="734" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598489479524" />
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1598922328568">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1598922328568" />
   </component>
 </project>
