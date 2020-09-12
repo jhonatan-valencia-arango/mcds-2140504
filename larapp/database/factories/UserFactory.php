@@ -26,8 +26,8 @@ $factory->define(User::class, function (Faker $faker) {
         'fullname' => $faker->name($gender),
         'email' => $faker->unique()->safeEmail(),
         'phone' => $faker->numberBetween(3101000000, 3202000000),
-        'birthdate' => $faker->dateTimeBetween('-60 years', '39', null),
-        'address' => 'Calle 50 # 5 L 98 C',
+        'birthdate' => $faker->dateTimeBetween('-60 years', '-21 years', null),
+        'address' => $faker->address,
         'photo' => $faker->image('public/storage/images',640,480, null, true),
         'email_verified_at' => now(),
         'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
