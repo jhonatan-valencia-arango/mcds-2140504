@@ -25,13 +25,17 @@ class UserSeeder extends Seeder
         ]);
 
         $usr = new User;
-        $usr->fullname      = 'Homer Simpson';
-        $usr->email         = 'HomerSimpson@gmail.com';
-        $usr->phone         = 3256987456;
-        $usr->birthdate     = '1988-10-10';
-        $usr->gender        = 'Male';
-        $usr->address       = 'Evergreen Avenue';
-        $usr->password      = bcrypt('123');
+        $usr->fullname = 'Homer Simpson';
+        $usr->email = 'HomerSimpson@gmail.com';
+        $usr->phone = 3256987456;
+        $usr->birthdate = '1988-10-10';
+        $usr->gender = 'Male';
+        $usr->address = 'Evergreen Avenue';
+        $usr->password = bcrypt('123');
         $usr->save();
+
+        //Factory
+
+        factory(User::class, 100)->create();
     }
 }
