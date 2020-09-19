@@ -35,7 +35,10 @@ Route::get('ages', function () {
     foreach ($users as $user)
     {
         $edad = Carbon::parse($user->birthdate)->age;
-        dump($user->fullname.' tiene '.$edad.' años.');
+        $tiempoTranscurridoCreacion = new Carbon($user->created_at);
+        $tiempoTranscurridoCreacion->setLocale('es');
+        $tiempo = $tiempoTranscurridoCreacion->diffForHumans();
+        dump($user->fullname.' tiene '.$edad.' años,'.' usuario creado '.$tiempo);
     }
 });
 
