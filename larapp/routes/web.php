@@ -42,3 +42,18 @@ Route::get('ages', function () {
     }
 });
 
+Route::get('challenge', function () {
+    foreach (App\User::all()->take(20) as $user) {
+        $years = Carbon::createFromDate($user->birthdate)->diff()->format('%y years old %m months %d days %h hours');
+        $since = Carbon::parse($user->created_at);
+        $rs[] = $user->fullname." - ".$years." - created ".$since->diffForHumans();
+    }
+//    dd($rs);
+
+    return view('challenge', ['rs' => $rs]);
+});
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
