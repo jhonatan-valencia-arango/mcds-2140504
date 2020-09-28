@@ -53,6 +53,15 @@ Route::get('challenge', function () {
     return view('challenge', ['rs' => $rs]);
 });
 
+Route::get('examples', function () {
+    $calificaciones = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+    $meses = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ];
+    $usuarios = [];
+    $estado = true;
+
+    return view('examples', compact('calificaciones', 'meses', 'usuarios', 'estado'));
+});
+
 
 Auth::routes();
 
