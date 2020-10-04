@@ -62,7 +62,16 @@ Route::get('examples', function () {
     return view('examples', compact('calificaciones', 'meses', 'usuarios', 'estado'));
 });
 
+Route::get('newExamples', function () {
+    return view('newExamples');
+});
+
+Route::get('lang/{lang}', function($lang) {
+    \Session::put('lang', $lang);
+    return \Redirect::back();
+})->middleware('web')->name('change_lang');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
