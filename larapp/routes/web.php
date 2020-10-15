@@ -18,17 +18,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('helloworld', function () {
-    dd('Hello World');
-});
+//Route::get('helloworld', function () {
+//    dd('Hello World');
+//});
 
-Route::get('users', function () {
-    dd(App\User::all());
-});
+//Route::get('users', function () {
+//    dd(App\User::all());
+//});
 
-Route::get('user/{id}', function ($id) {
-    dd(App\User::find($id));
-});
+//Route::get('user/{id}', function ($id) {
+//    dd(App\User::find($id));
+//});
 
 Route::get('ages', function () {
     $users = App\User::all()->take(10);
@@ -74,4 +74,11 @@ Route::get('lang/{lang}', function($lang) {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//Resources
+Route::resources([
+    'users'             => 'UserController',
+//    'categories'        => 'CategoryController',
+//    'games'             => 'GameController',
+]);
 
