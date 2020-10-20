@@ -4,6 +4,32 @@
 
 @section('content')
     <div class="row">
+        <div class="col-md-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="{{ url('home') }}">
+                            <i class="fa fa-clipboard-list"></i>
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="{{ route('users.index') }}">
+                            <i class="fa fa-users"></i>
+                            Usuarios
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <a href="#">
+                            <i class="fa fa-plus"></i>
+                            Crear usuario
+                        </a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-md-6 offset-md-3">
             <h1>
                 <i class="fa fa-plus"></i>
