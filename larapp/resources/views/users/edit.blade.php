@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Crear Usuario')
+@section('title', 'Editar Usuario - '.$user->fullname)
 
 @section('content')
     <div class="row">
@@ -21,8 +21,8 @@
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
                         <a href="#">
-                            <i class="fa fa-plus"></i>
-                            Crear usuario
+                            <i class="fa fa-pen"></i>
+                            Editar usuario
                         </a>
                     </li>
                 </ol>
@@ -32,14 +32,16 @@
     <div class="row">
         <div class="col-md-6 offset-md-3">
             <h1>
-                <i class="fa fa-plus"></i>
-                Adicionar Usuarios
+                <i class="fa fa-pen"></i>
+                Editar Usuarios
             </h1>
             <hr>
-            <form method="POST" action="{{ route('users.store') }}" enctype="multipart/form-data">
+            <form method="POST" action="{{ route('users.update', $user->id) }}" enctype="multipart/form-data">
                 @csrf
+                @method('PUT')
+                <input type="hidden" name="id" value="{{ $user->id }}">
                 <div class="form-group">
-                    <input id="fullname" type="text" class="form-control @error('fullname') is-invalid @enderror" name="fullname" value="{{ old('fullname') }}" placeholder="@lang('general.fullname')" autofocus>
+                    <input id="fullname" type="text" class="form-control @error('fullname') is-invalid @enderror" name="fullname" value="{{ old('fullname', $user->fullname) }}" placeholder="@lang('general.fullname')" autofocus>
 
                     @error('fullname')
                     <span class="invalid-feedback" role="alert">
@@ -49,7 +51,7 @@
                 </div>
 
                 <div class="form-group">
-                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="@lang('general.email')">
+                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email', $user->email) }}" placeholder="@lang('general.email')">
 
                     @error('email')
                     <span class="invalid-feedback" role="alert">
@@ -59,7 +61,7 @@
                 </div>
 
                 <div class="form-group">
-                    <input id="phone" type="number" class="form-control @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" placeholder="@lang('general.label-phone')">
+                    <input id="phone" type="number" class="form-control @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone', $user->phone) }}" placeholder="@lang('general.label-phone')">
 
                     @error('phone')
                     <span class="invalid-feedback" role="alert">
@@ -69,7 +71,7 @@
                 </div>
 
                 <div class="form-group">
-                    <input id="birthdate" type="date" class="form-control @error('birthdate') is-invalid @enderror" name="birthdate" value="{{ old('birthdate') }}" placeholder="@lang('general.label-birthdate')">
+                    <input id="birthdate" type="date" class="form-control @error('birthdate') is-invalid @enderror" name="birthdate" value="{{ old('birthdate', $user->birthdate) }}" placeholder="@lang('general.label-birthdate')">
 
                     @error('birthdate')
                     <span class="invalid-feedback" role="alert">
@@ -81,8 +83,8 @@
                 <div class="form-group">
                     <select name="gender" id="gender" class="form-control @error('gender') is-invalid @enderror">
                         <option value="">@lang('general.select-value')</option>
-                        <option value="Female" @if(old('gender') == 'Female') selected @endif>@lang('general.select-female')</option>
-                        <option value="Male" @if(old('gender') == 'Male') selected @endif>@lang('general.select-male')</option>
+                        <option value="Female" @if(old('gender', $user->gender) == 'Female') selected @endif>@lang('general.select-female')</option>
+                        <option value="Male" @if(old('gender', $user->gender) == 'Male') selected @endif>@lang('general.select-male')</option>
                     </select>
 
                     @error('gender')
@@ -93,7 +95,7 @@
                 </div>
 
                 <div class="form-group">
-                    <input id="address" type="text" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" placeholder="@lang('general.label-address')">
+                    <input id="address" type="text" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address', $user->address) }}" placeholder="@lang('general.label-address')">
 
                     @error('address')
                     <span class="invalid-feedback" role="alert">
@@ -119,28 +121,14 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <img src="{{ asset('imgs/no-photo.png') }}" class="img-thumbnail" id="preview" width="120px">
+                            <img src="{{ asset($user->photo) }}" class="img-thumbnail" id="preview" width="120px">
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="@lang('general.password')">
-
-                    @error('password')
-                    <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                    @enderror
-                </div>
-
-                <div class="form-group">
-                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="@lang('general.confirm_password')">
-                </div>
-
-                <div class="form-group">
                     <button type="submit" class="btn btn-larapp btn-block text-uppercase">
-                        Adicionar
+                        Editar
                         <i class="fa fa-save"></i>
                     </button>
                 </div>

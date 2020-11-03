@@ -78,7 +78,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 //Resources
 Route::resources([
     'users'             => 'UserController',
-//    'categories'        => 'CategoryController',
+    'categories'        => 'CategoryController',
 //    'games'             => 'GameController',
 ]);
 

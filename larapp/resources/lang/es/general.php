@@ -28,4 +28,8 @@ return [
     'select-male'                       => 'Masculino',
     'label-address'                     => 'Dirección',
     'home'                              => 'Inicio',
+    'title-dashboard'                   => 'Escritorio',
+    'name'                              => 'Nombre',
+    'image'                             => 'Imágen',
+    'description'                       => 'Descripción',
 ];

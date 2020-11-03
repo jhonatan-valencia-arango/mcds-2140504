@@ -28,4 +28,8 @@ return [
     'select-male'                       => 'Male',
     'label-address'                     => 'Address',
     'home'                              => 'Home',
+    'title-dashboard'                   => 'Dashboard',
+    'name'                              => 'Name',
+    'image'                             => 'Image',
+    'description'                       => 'Description',
 ];

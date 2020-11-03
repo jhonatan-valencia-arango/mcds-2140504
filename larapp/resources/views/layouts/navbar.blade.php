@@ -55,6 +55,15 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ url('users') }}">
+                                <i class="fa fa-users"></i>
+                                Módulo Usuarios
+                            </a>
+                            <a class="dropdown-item" href="{{ url('categories') }}">
+                                <i class="fas fa-list-alt"></i>
+                                Módulo Categorías
+                            </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
