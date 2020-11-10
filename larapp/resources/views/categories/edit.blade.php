@@ -73,7 +73,7 @@
                 </div>
 
                 <div class="form-group">
-                    <textarea rows="6" id="description" type="" class="form-control @error('description') is-invalid @enderror" name="description" value="{{ old('description', $category->description) }}" placeholder="@lang('general.description')" autofocus></textarea>
+                    <textarea rows="6" id="description" type="" class="form-control @error('description') is-invalid @enderror" name="description" placeholder="@lang('general.description')" autofocus>{{ old('description', $category->description) }}</textarea>
                     @error('description')
                     <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>

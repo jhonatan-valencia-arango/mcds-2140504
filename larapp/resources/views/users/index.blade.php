@@ -7,6 +7,7 @@
             <h1><i class="fa fa-users"></i> Lista de usuarios</h1>
             <hr>
             <a href="{{ url('users/create') }}" class="btn btn-success"><i class="fa fa-plus"></i> Adicionar usuario</a>
+            <a href="{{ url('generate/pdf/users') }}" class="btn btn-primary"><i class="fa fa-download"></i> Exportar</a>
             <hr>
             <table class="table table-hover table-striped">
                 <thead>

@@ -32,4 +32,5 @@ return [
     'name'                              => 'Nombre',
     'image'                             => 'Imágen',
     'description'                       => 'Descripción',
+    'price'                             => 'Precio',
 ];

@@ -79,6 +79,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resources([
     'users'             => 'UserController',
     'categories'        => 'CategoryController',
-//    'games'             => 'GameController',
+    'games'             => 'GameController',
 ]);
+
+//Exports PDF
+Route::get('generate/pdf/users', 'UserController@pdf');
 
