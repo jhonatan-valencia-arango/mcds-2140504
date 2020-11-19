@@ -82,6 +82,12 @@ Route::resources([
     'games'             => 'GameController',
 ]);
 
-//Exports PDF
+//Export PDF
 Route::get('generate/pdf/users', 'UserController@pdf');
+
+//Export Excel
+Route::get('generate/excel/users', 'UserController@excel');
+
+//Import Excel
+Route::post('import/excel/users', 'UserController@import');
 

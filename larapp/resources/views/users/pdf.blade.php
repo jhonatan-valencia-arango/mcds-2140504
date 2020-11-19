@@ -11,6 +11,7 @@
     table {
         border: 1px solid #aaa;
         border-collapse: collapse;
+        align-content: center;
     }
     table th, table td {
         font-family: sans-serif;

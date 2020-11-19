@@ -7,7 +7,16 @@
             <h1><i class="fa fa-users"></i> Lista de usuarios</h1>
             <hr>
             <a href="{{ url('users/create') }}" class="btn btn-success"><i class="fa fa-plus"></i> Adicionar usuario</a>
-            <a href="{{ url('generate/pdf/users') }}" class="btn btn-primary"><i class="fa fa-download"></i> Exportar</a>
+            <form action="{{ url('import/excel/users') }}" method="POST" enctype="multipart/form-data" class="d-inline">
+                @csrf
+                <input type="file" class="d-none" id="file" name="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+                <button type="button" class="btn btn-success btn-excel">
+                    <i class="fa fa-file-excel"></i>
+                    Importar usuarios
+                </button>
+            </form>
+            <a href="{{ url('generate/pdf/users') }}" class="btn btn-primary"><i class="fa fa-file-pdf"></i> Exportar a PDF</a>
+            <a href="{{ url('generate/excel/users') }}" class="btn btn-primary"><i class="fa fa-file-excel"></i> Exportar a Excel</a>
             <hr>
             <table class="table table-hover table-striped">
                 <thead>
