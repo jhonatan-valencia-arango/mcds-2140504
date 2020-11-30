@@ -14,6 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::group(['middleware' => 'admin'], function() {
+    // Resources
+    Route::resources([
+        'users'       => 'UserController',
+        'categories'  => 'CategoryController',
+        'games'       => 'GameController',
+    ]);
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -75,19 +84,19 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-//Resources
-Route::resources([
-    'users'             => 'UserController',
-    'categories'        => 'CategoryController',
-    'games'             => 'GameController',
-]);
-
 //Export PDF
 Route::get('generate/pdf/users', 'UserController@pdf');
+Route::get('generate/pdf/games', 'GameController@pdf');
 
 //Export Excel
 Route::get('generate/excel/users', 'UserController@excel');
+Route::get('generate/excel/games', 'GameController@excel');
 
 //Import Excel
 Route::post('import/excel/users', 'UserController@import');
+Route::post('import/excel/games', 'GameController@import');
+
+//Search scope
+Route::post('users/search', 'UserController@search');
+Route::post('games/search', 'GameController@search');
 

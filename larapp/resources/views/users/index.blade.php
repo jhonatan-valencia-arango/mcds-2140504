@@ -17,7 +17,13 @@
             </form>
             <a href="{{ url('generate/pdf/users') }}" class="btn btn-primary"><i class="fa fa-file-pdf"></i> Exportar a PDF</a>
             <a href="{{ url('generate/excel/users') }}" class="btn btn-primary"><i class="fa fa-file-excel"></i> Exportar a Excel</a>
-            <hr>
+            <input type="hidden" id="tmodel" value="users">
+            <input type="search" id="qsearch" name="qsearch" class="form-search" autocomplete="off" placeholder="Buscar">
+            <br>
+            <div class="loader d-none text-center mt-5">
+                <img src="{{ asset('imgs/loader.gif')}}" width="100px">
+            </div>
+            <br><br>
             <table class="table table-hover table-striped">
                 <thead>
                     <tr>
@@ -28,7 +34,7 @@
                         <th>Acciones</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="content">
                     @foreach($users as $user)
                         <tr>
                             <td>{{ $user->fullname}}</td>
