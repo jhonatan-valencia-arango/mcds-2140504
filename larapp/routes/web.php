@@ -23,9 +23,7 @@ Route::group(['middleware' => 'admin'], function() {
     ]);
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@welcome');
 
 //Route::get('helloworld', function () {
 //    dd('Hello World');
